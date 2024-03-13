@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="458.0" prefWidth="523.0" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.di.practica4.ContactController">
+   <Label text="Agenda" textAlignment="CENTER">
+      <font>
+         <Font name="System Bold Italic" size="18.0" />
+      </font>
+   </Label>
+    <TextField fx:id="nombreField" promptText="Nombre" />
+    <TextField fx:id="apellidoField" promptText="Apellido" />
+    <TextField fx:id="telefonoField" promptText="Número de Teléfono" />
+    <TextField fx:id="correoField" promptText="Correo Electrónico" />
+    <TextArea fx:id="contactListArea" layoutX="10" layoutY="10" prefHeight="200" prefWidth="200" />
+    <Button onAction="#agregarContacto" text="Agregar Contacto" />
+    <Button onAction="#editarContacto" text="Editar Contacto" />
+    <Button onAction="#eliminarContacto" text="Eliminar Contacto" />
+    <Button onAction="#listarContactos" text="Listar Contactos" />
+    <Button onAction="#exportarContactos" text="Exportar Contactos" />
+</VBox>
